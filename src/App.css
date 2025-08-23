@@ -1,0 +1,86 @@
+/* Background */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #556b2f, #8f9779);
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0f5e9;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #d8e3d0;
+  margin-bottom: 20px;
+}
+
+/* Input & Button */
+.task-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.custom-input {
+  width: 300px;
+  border-radius: 12px;
+  padding: 10px 15px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn {
+  border-radius: 12px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.custom-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Stats */
+.stats {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Task Cards */
+.task-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  background: #f0f5e9;
+  color: #2f3e2f;
+  padding: 18px;
+  border-radius: 15px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.task-card.completed {
+  background: #c4d7b2;
+  text-decoration: line-through;
+  color: #3d4d3d;
+}

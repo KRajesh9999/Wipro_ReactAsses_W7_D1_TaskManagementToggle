@@ -1,0 +1,144 @@
+/* === Global Reset & Theme === */
+html, body, #__next {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Theme Colors */
+  --color-bg: #f9fafb;
+  --color-surface: #ffffff;
+  --color-primary: #2563eb; /* Blue-600 */
+  --color-primary-hover: #1d4ed8;
+  --color-accent: #10b981; /* Emerald */
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+
+  /* Border Radius */
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Transition */
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* === Layout === */
+.main {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #f0fdf4);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+/* === Card === */
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 24px;
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* === Buttons === */
+.button {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.button:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* === Input Fields === */
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid #cbd5e1;
+  outline: none;
+  transition: var(--transition);
+  font-size: 15px;
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+/* === Typography === */
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+p {
+  margin: 8px 0;
+  color: var(--color-muted);
+}
+
+.small {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+/* === Navbar/Header === */
+.navbar {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: var(--color-text);
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.navbar a:hover {
+  color: var(--color-primary);
+}
+
+
+/* html, body, #__next { height: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; background:#f8fafc; color:#0f172a; }
+.main { display: flex; }
+.container { max-width: 720px; margin: 0 auto; padding: 24px; } */
